@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 const NavBar = () => {
     const links = <>
      <li><NavLink to="/">Home</NavLink></li>
-     <li><a>Item 3</a></li>
+     <li><NavLink to="/listedBooks">Listed Books</NavLink></li>
     </>
     return (
         <div className="navbar bg-base-100 ">
@@ -26,7 +26,7 @@ const NavBar = () => {
       </div>
       <ul
         tabIndex={0}
-        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+        className="mr-4 menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
         {links}
       </ul>
     </div>
